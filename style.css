@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1.3em;
+    padding: 0 1em 2em;
+    line-height: 1.4;
+    text-align: center;
+}
+
+h2 {
+    margin: 14px 0;
+    text-align: center;
+}
+
+._container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /*padding: 1em 0;*/
+    text-align: left;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+._card {
+    width: 100%;
+    display: flex;
+    background: #eee;
+    padding: .6em 1em .6em .6em;
+    border-radius: .3em;
+    box-shadow: rgba(0, 0, 0, 0.2) 3px 6px 10px;
+    border: solid 1px #ccc;
+}
+
+._img {
+    min-width: 80px;
+    border-radius: .3em;
+    opacity: .7;
+    margin: 0 .6em 0 0;
+    max-width: 100%;
+    height: auto;
+}
+
+._card h3 {
+    margin: 0;
+    font-size: 1em;
+}
+
+._content p {
+    margin: 0;
+    font-size: .7em;
+    color: #222;
+}
+._container  {
+    text-decoration: none;
+    width: 100%;
+
+}
+main span {
+    display: flex;
+    cursor: pointer;
+}
+.search-itemSuper {
+    width: 100%;
+}
+@media (max-width: 820px) {
+    ._container {
+        min-width: auto;
+        display: block;
+    }
+    ._card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    ._card {
+        box-shadow: none;
+    }
+}
